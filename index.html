@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Vilhelm Gustafsson - Self taught programmer since age 13. Studied programming from age 16-19"
+      content="Portfolio page by Vilhelm Gustafsson - Self taught programmer since age 13. Currently studying programming in high school."
     />
     <meta
       name="keywords"
@@ -19,7 +19,7 @@
     <meta property="og:title" content="Vilhelm Gustafsson | Portfolio Page" />
     <meta
       property="og:description"
-      content="Vilhelm Gustafsson - Self taught programmer since age 13. Studied programming from age 16-19"
+      content="Vilhelm Gustafsson - Self taught programmer since age 13. Currently studying programming in high school."
     />
 
     <link rel="stylesheet" href="style.css" />
@@ -40,45 +40,116 @@
     </header>
     <main>
       <section id="home">
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. A, ipsa
-          totam enim laboriosam cum quisquam? Dolorem, voluptatum molestiae
-          laboriosam ratione, corrupti officiis quaerat consectetur hic
-          excepturi adipisci eligendi amet odit dicta praesentium quam soluta
-          deserunt, molestias eveniet sit minima ea.
-        </p>
+        <h2>Welcome!</h2>
+        <p>Welcome to my portfolio page.</p>
       </section>
       <section id="about">
         <h2>About</h2>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
-          distinctio nesciunt ab ex nulla maxime quidem, nihil porro! Veniam
-          quidem fugit nam repellendus magni dolores obcaecati excepturi autem
-          molestiae possimus deleniti eligendi facere dolore minus laboriosam,
-          natus voluptatum non quo!
+          I am Vilhelm Gustafsson. I have been learning programming in my free
+          time since I was 13, and am currently studying programming in high
+          school.
+        </p>
+        <p>
+          Other than programming I am also very interested in trains, japanese
+          media such as anime, manga, and
+          <ruby>東方 <rp>(</rp><rt>Touhou</rt><rp>)</rp></ruby> Project. I also
+          like video games, especially rhythm games and games related to my
+          other interests.
         </p>
       </section>
       <section id="projects">
         <h2>Projects</h2>
+        <aside>
+          I keep most of my projects private, but I will list some of them
+          anyways
+        </aside>
+        <h3>ComputerCraft storage system</h3>
         <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
-          distinctio nesciunt ab ex nulla maxime quidem, nihil porro! Veniam
-          quidem fugit nam repellendus magni dolores obcaecati excepturi autem
-          molestiae possimus deleniti eligendi facere dolore minus laboriosam,
-          natus voluptatum non quo!
+          Language: lua
+          <br />
+          <a href="https://github.com/Isglassen/ComputerCraft-Sorting"
+            >GitHub</a
+          >
+          <br />
+          <br />
+          This project is a program that can be run on computers in the
+          minecraft mod CCTweaked. It allows moving items from a input/output
+          chest to an unlimited storage of other chests. Allowing for easy
+          storage of items.
+          <br />
+          I am no longer working on this projects since I use the new storage
+          features in the Create mod instead.
+        </p>
+        <h3>Schemavisare</h3>
+        <p>
+          Language: TypeScript
+          <br />
+          <a href="https://github.com/Isglassen/Skola24Export">GitHub</a>
+          (Currently private)
+          <br />
+          <br />
+          This project was originally just meant to generate ics files for the
+          school schedule. The full schedule is accessible through Skola24, but
+          there was no way to add this schedule to phone calendars. After that I
+          also added the ability to view the schedule similarly to the Skola24
+          schedule viewer, but also adding the id directly to the link so that
+          it doesn't have to typed in every time the page loads. It uses
+          express.js on the server and generates html on the server with jsx
+          syntax.
+          <br />
+          <br />
+          I am currently working on an update that allows users to provide
+          custom events and changes to the data that Skola24 provides. With this
+          update I am also learning to use the upcoming Temporal API for
+          javascript.
         </p>
       </section>
       <section id="contact">
         <h2>Contact</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis
-          distinctio nesciunt ab ex nulla maxime quidem, nihil porro! Veniam
-          quidem fugit nam repellendus magni dolores obcaecati excepturi autem
-          molestiae possimus deleniti eligendi facere dolore minus laboriosam,
-          natus voluptatum non quo!
-        </p>
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Your information</legend>
+            <label for="name">Name: </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="name"
+              placeholder="Your name"
+              required
+            />
+            <br />
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="email"
+              placeholder="Your email"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Your message</legend>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              cols="50"
+              placeholder="Your message"
+              required
+            ></textarea>
+          </fieldset>
+          <button type="submit">Send</button>
+        </form>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <h3>External links</h3>
+      <ul>
+        <li><a href="https://github.com/Isglassen">GitHub</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
