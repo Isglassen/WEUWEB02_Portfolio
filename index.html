@@ -49,14 +49,137 @@
           I am Vilhelm Gustafsson. I have been learning programming in my free
           time since I was 13, and am currently studying programming in high
           school.
-        </p>
-        <p>
+          <br />
+          <br />
           Other than programming I am also very interested in trains, japanese
           media such as anime, manga, and
-          <ruby>東方 <rp>(</rp><rt>Touhou</rt><rp>)</rp></ruby> Project. I also
+          <ruby>東方<rp>(</rp><rt>Touhou</rt><rp>)</rp></ruby> Project. I also
           like video games, especially rhythm games and games related to my
           other interests.
         </p>
+        <h3>Required for the assignment</h3>
+        <p>
+          These things will be quite random
+          <br />
+          <br />
+          My favorite website is <a href="https://example.com">example.com</a>
+          <br />
+          Here is an image of an Rc locomotive.
+          <br />
+          <img src="/media/Rc-lok.jpg" alt="Rc locomotive" width="300" />
+        </p>
+        <h4>My hobbies:</h4>
+        <ul>
+          <li>Playing games</li>
+          <li>Watching anime</li>
+          <li>Reading manga</li>
+          <li>Programming</li>
+        </ul>
+        <h4>
+          My favorite <ruby>東方<rp>(</rp><rt>Touhou</rt><rp>)</rp></ruby> music
+          circles:
+        </h4>
+
+        <ol>
+          <li>
+            <ruby>森羅万象<rp>(</rp><rt>Shinra-Bansho</rt><rp>)</rp></ruby>
+          </li>
+          <li>
+            <ruby>暁Records<rp>(</rp><rt>Akatsuki Records</rt><rp>)</rp></ruby>
+          </li>
+          <li>Shibayan Records</li>
+        </ol>
+        <h4>
+          Here is a list of
+          <ruby>東方<rp>(</rp><rt>Touhou</rt><rp>)</rp></ruby> games i have a
+          1cc in:
+        </h4>
+        <table>
+          <thead>
+            <tr>
+              <th>Game Number</th>
+              <th>Japanese name</th>
+              <th>English name</th>
+              <th>Completed Difficulty</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10</td>
+              <td>
+                <ruby
+                  >東方<rp>(</rp><rt>Touhou</rt><rp>)</rp>風神録<rp>(</rp
+                  ><rt>Wind God Chronicles</rt><rp>)</rp></ruby
+                >
+              </td>
+              <td>Mountain of Faith</td>
+              <td>Normal</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>
+                <ruby
+                  >東方<rp>(</rp><rt>Touhou</rt><rp>)</rp>神霊廟<rp>(</rp
+                  ><rt>Divine Spirit Mausoleum</rt><rp>)</rp></ruby
+                >
+              </td>
+              <td>Ten Desires</td>
+              <td>Normal</td>
+            </tr>
+          </tbody>
+        </table>
+        <br />
+        <h4>A sound</h4>
+        <audio
+          src="/media/Touhou Death - QuickSounds.com.mp3"
+          controls
+          loop
+          id="death-sound-audio"
+        ></audio>
+        <a id="autoplay-link" href="/index.html?autoplay#death-sound-audio"
+          >Don't click this link</a
+        >
+        <script>
+          if (new URLSearchParams(window.location.search).has("autoplay")) {
+            const audioElement = document.getElementById("death-sound-audio");
+            playAudio = () => {
+              if (audioElement instanceof HTMLAudioElement) {
+                audioElement.controls = false;
+                audioElement.play();
+              }
+            };
+            window.onclick = playAudio;
+            playAudio();
+            const autoplayLink = document.getElementById("autoplay-link");
+            if (autoplayLink instanceof HTMLAnchorElement) {
+              autoplayLink.href = "/index.html#death-sound-audio";
+              autoplayLink.textContent = "Click here to stop autoplay";
+            }
+          }
+        </script>
+        <h4>
+          Favorite <ruby>東方<rp>(</rp><rt>Touhou</rt><rp>)</rp></ruby> song
+        </h4>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/TPjAsus_bZo?si=XOf-ArkkPwsOfPmu"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+        <h4>Shinjuku station is very cool.</h4>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1362.4622979908434!2d139.69990042539172!3d35.68931859982172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd0d6b1ba1f%3A0x1c32a1f1ecacfdd5!2sShinjukus%20j%C3%A4rnv%C3%A4gsstation!5e0!3m2!1ssv!2sse!4v1758715794423!5m2!1ssv!2sse"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
       <section id="projects">
         <h2>Projects</h2>
